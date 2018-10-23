@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="19" passed="19">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="16694" started-at="2018-10-23T08:51:12Z" finished-at="2018-10-23T08:51:28Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="16694" started-at="2018-10-23T08:51:12Z" finished-at="2018-10-23T08:51:28Z">
+      <class name="tests.PostExamples">
+        <test-method status="PASS" signature="test_1()[pri:0, instance:tests.PostExamples@56ace400]" name="test_1" duration-ms="955" started-at="2018-10-23T14:21:23Z" description="Send a different method type and verify the result" finished-at="2018-10-23T14:21:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_1 -->
+        <test-method status="PASS" signature="test_2()[pri:0, instance:tests.PostExamples@56ace400]" name="test_2" duration-ms="853" started-at="2018-10-23T14:21:24Z" description="Send method type as post without passing any data and verify the result" finished-at="2018-10-23T14:21:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_2 -->
+        <test-method status="PASS" signature="test_3()[pri:0, instance:tests.PostExamples@56ace400]" name="test_3" duration-ms="797" started-at="2018-10-23T14:21:25Z" description=" POST Example creating a new user" finished-at="2018-10-23T14:21:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_3 -->
+        <test-method status="PASS" signature="test_4()[pri:0, instance:tests.PostExamples@56ace400]" name="test_4" duration-ms="930" started-at="2018-10-23T14:21:26Z" description="Try to create a duplicate user and verify the result" finished-at="2018-10-23T14:21:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_4 -->
+      </class> <!-- tests.PostExamples -->
+      <class name="tests.GetExamples">
+        <test-method status="PASS" signature="test_01()[pri:0, instance:tests.GetExamples@553f1d75]" name="test_01" duration-ms="4245" started-at="2018-10-23T14:21:12Z" description="Get users list and validate the result" finished-at="2018-10-23T14:21:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_01 -->
+        <test-method status="PASS" signature="test_02()[pri:0, instance:tests.GetExamples@553f1d75]" name="test_02" duration-ms="1462" started-at="2018-10-23T14:21:16Z" description="Get posts list and validate the result" finished-at="2018-10-23T14:21:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_02 -->
+        <test-method status="PASS" signature="test_03()[pri:0, instance:tests.GetExamples@553f1d75]" name="test_03" duration-ms="954" started-at="2018-10-23T14:21:17Z" description="Get Comments list and check if it has the email" finished-at="2018-10-23T14:21:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_03 -->
+        <test-method status="PASS" signature="test_04()[pri:0, instance:tests.GetExamples@553f1d75]" name="test_04" duration-ms="1090" started-at="2018-10-23T14:21:18Z" description="Send invalid request and validate the status code" finished-at="2018-10-23T14:21:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_04 -->
+        <test-method status="PASS" signature="test_06()[pri:0, instance:tests.GetExamples@553f1d75]" name="test_06" duration-ms="335" started-at="2018-10-23T14:21:20Z" description="Validate the data for weather API" finished-at="2018-10-23T14:21:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_06 -->
+        <test-method status="PASS" signature="test_07()[pri:0, instance:tests.GetExamples@553f1d75]" name="test_07" duration-ms="1585" started-at="2018-10-23T14:21:20Z" description="Using params() to fetch data and validating the response" finished-at="2018-10-23T14:21:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_07 -->
+        <test-method status="PASS" signature="test_08(java.lang.String, java.lang.String)[pri:0, instance:tests.GetExamples@553f1d75]" name="test_08" duration-ms="412" started-at="2018-10-23T14:21:21Z" description="Using pathParams to fetch data and validating the country name" data-provider="circuitLocations" finished-at="2018-10-23T14:21:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[adelaide]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Australia]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_08 -->
+        <test-method status="PASS" signature="test_08(java.lang.String, java.lang.String)[pri:0, instance:tests.GetExamples@553f1d75]" name="test_08" duration-ms="359" started-at="2018-10-23T14:21:22Z" description="Using pathParams to fetch data and validating the country name" data-provider="circuitLocations" finished-at="2018-10-23T14:21:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[detroit]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[USA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_08 -->
+        <test-method status="PASS" signature="test_08(java.lang.String, java.lang.String)[pri:0, instance:tests.GetExamples@553f1d75]" name="test_08" duration-ms="393" started-at="2018-10-23T14:21:22Z" description="Using pathParams to fetch data and validating the country name" data-provider="circuitLocations" finished-at="2018-10-23T14:21:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[george]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[South Africa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_08 -->
+        <test-method status="PASS" signature="test_09()[pri:0, instance:tests.GetExamples@553f1d75]" name="test_09" duration-ms="209" started-at="2018-10-23T14:21:23Z" description="Validate response message" finished-at="2018-10-23T14:21:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_09 -->
+        <test-method status="PASS" signature="test_10()[pri:0, instance:tests.GetExamples@553f1d75]" name="test_10" duration-ms="210" started-at="2018-10-23T14:21:23Z" description="Send invalid data and check if it returns correct response or not" finished-at="2018-10-23T14:21:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_10 -->
+        <test-method status="PASS" signature="test_11()[pri:0, instance:tests.GetExamples@553f1d75]" name="test_11" duration-ms="212" started-at="2018-10-23T14:21:23Z" description="Try using the invalid method type" finished-at="2018-10-23T14:21:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_11 -->
+        <test-method status="PASS" signature="test_05(java.lang.String, java.lang.String)[pri:8, instance:tests.GetExamples@553f1d75]" name="test_05" duration-ms="555" started-at="2018-10-23T14:21:27Z" description="Validate the status code" data-provider="md5hashes" finished-at="2018-10-23T14:21:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testcaseOne]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4ff1c9b1d1f23c6def53f957b1ed827f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_05 -->
+        <test-method status="PASS" signature="test_05(java.lang.String, java.lang.String)[pri:8, instance:tests.GetExamples@553f1d75]" name="test_05" duration-ms="391" started-at="2018-10-23T14:21:27Z" description="Validate the status code" data-provider="md5hashes" finished-at="2018-10-23T14:21:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testcaseTwo]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[39738347fb533d798aca9ae0f56ca126]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_05 -->
+        <test-method status="PASS" signature="test_05(java.lang.String, java.lang.String)[pri:8, instance:tests.GetExamples@553f1d75]" name="test_05" duration-ms="443" started-at="2018-10-23T14:21:28Z" description="Validate the status code" data-provider="md5hashes" finished-at="2018-10-23T14:21:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testcaseThree]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[db6b151bb4bde46fddb361043bc3e2d9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_05 -->
+      </class> <!-- tests.GetExamples -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,174 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>19/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Oct 23 14:21:12 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>16 seconds (16694 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.GetExamples.test_01()'><b>test_01</b><br>Test class: tests.GetExamples<br>Test method: Get users list and validate the result</td>
+<td></td>
+<td>4</td>
+<td>tests.GetExamples@553f1d75</td></tr>
+<tr>
+<td title='tests.GetExamples.test_02()'><b>test_02</b><br>Test class: tests.GetExamples<br>Test method: Get posts list and validate the result</td>
+<td></td>
+<td>1</td>
+<td>tests.GetExamples@553f1d75</td></tr>
+<tr>
+<td title='tests.GetExamples.test_03()'><b>test_03</b><br>Test class: tests.GetExamples<br>Test method: Get Comments list and check if it has the email</td>
+<td></td>
+<td>0</td>
+<td>tests.GetExamples@553f1d75</td></tr>
+<tr>
+<td title='tests.GetExamples.test_04()'><b>test_04</b><br>Test class: tests.GetExamples<br>Test method: Send invalid request and validate the status code</td>
+<td></td>
+<td>1</td>
+<td>tests.GetExamples@553f1d75</td></tr>
+<tr>
+<td title='tests.GetExamples.test_05()'><b>test_05</b><br>Test class: tests.GetExamples<br>Test method: Validate the status code<br>Parameters: testcaseOne, 4ff1c9b1d1f23c6def53f957b1ed827f</td>
+<td></td>
+<td>0</td>
+<td>tests.GetExamples@553f1d75</td></tr>
+<tr>
+<td title='tests.GetExamples.test_05()'><b>test_05</b><br>Test class: tests.GetExamples<br>Test method: Validate the status code<br>Parameters: testcaseTwo, 39738347fb533d798aca9ae0f56ca126</td>
+<td></td>
+<td>0</td>
+<td>tests.GetExamples@553f1d75</td></tr>
+<tr>
+<td title='tests.GetExamples.test_05()'><b>test_05</b><br>Test class: tests.GetExamples<br>Test method: Validate the status code<br>Parameters: testcaseThree, db6b151bb4bde46fddb361043bc3e2d9</td>
+<td></td>
+<td>0</td>
+<td>tests.GetExamples@553f1d75</td></tr>
+<tr>
+<td title='tests.GetExamples.test_06()'><b>test_06</b><br>Test class: tests.GetExamples<br>Test method: Validate the data for weather API</td>
+<td></td>
+<td>0</td>
+<td>tests.GetExamples@553f1d75</td></tr>
+<tr>
+<td title='tests.GetExamples.test_07()'><b>test_07</b><br>Test class: tests.GetExamples<br>Test method: Using params() to fetch data and validating the response</td>
+<td></td>
+<td>1</td>
+<td>tests.GetExamples@553f1d75</td></tr>
+<tr>
+<td title='tests.GetExamples.test_08()'><b>test_08</b><br>Test class: tests.GetExamples<br>Test method: Using pathParams to fetch data and validating the country name<br>Parameters: adelaide, Australia</td>
+<td></td>
+<td>0</td>
+<td>tests.GetExamples@553f1d75</td></tr>
+<tr>
+<td title='tests.GetExamples.test_08()'><b>test_08</b><br>Test class: tests.GetExamples<br>Test method: Using pathParams to fetch data and validating the country name<br>Parameters: detroit, USA</td>
+<td></td>
+<td>0</td>
+<td>tests.GetExamples@553f1d75</td></tr>
+<tr>
+<td title='tests.GetExamples.test_08()'><b>test_08</b><br>Test class: tests.GetExamples<br>Test method: Using pathParams to fetch data and validating the country name<br>Parameters: george, South Africa</td>
+<td></td>
+<td>0</td>
+<td>tests.GetExamples@553f1d75</td></tr>
+<tr>
+<td title='tests.GetExamples.test_09()'><b>test_09</b><br>Test class: tests.GetExamples<br>Test method: Validate response message</td>
+<td></td>
+<td>0</td>
+<td>tests.GetExamples@553f1d75</td></tr>
+<tr>
+<td title='tests.PostExamples.test_1()'><b>test_1</b><br>Test class: tests.PostExamples<br>Test method: Send a different method type and verify the result</td>
+<td></td>
+<td>0</td>
+<td>tests.PostExamples@56ace400</td></tr>
+<tr>
+<td title='tests.GetExamples.test_10()'><b>test_10</b><br>Test class: tests.GetExamples<br>Test method: Send invalid data and check if it returns correct response or not</td>
+<td></td>
+<td>0</td>
+<td>tests.GetExamples@553f1d75</td></tr>
+<tr>
+<td title='tests.GetExamples.test_11()'><b>test_11</b><br>Test class: tests.GetExamples<br>Test method: Try using the invalid method type</td>
+<td></td>
+<td>0</td>
+<td>tests.GetExamples@553f1d75</td></tr>
+<tr>
+<td title='tests.PostExamples.test_2()'><b>test_2</b><br>Test class: tests.PostExamples<br>Test method: Send method type as post without passing any data and verify the result</td>
+<td></td>
+<td>0</td>
+<td>tests.PostExamples@56ace400</td></tr>
+<tr>
+<td title='tests.PostExamples.test_3()'><b>test_3</b><br>Test class: tests.PostExamples<br>Test method:  POST Example creating a new user</td>
+<td></td>
+<td>0</td>
+<td>tests.PostExamples@56ace400</td></tr>
+<tr>
+<td title='tests.PostExamples.test_4()'><b>test_4</b><br>Test class: tests.PostExamples<br>Test method: Try to create a duplicate user and verify the result</td>
+<td></td>
+<td>0</td>
+<td>tests.PostExamples@56ace400</td></tr>
+</table><p>
+</body>
+</html>

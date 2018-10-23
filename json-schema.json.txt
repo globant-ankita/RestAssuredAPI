@@ -1,0 +1,332 @@
+  1 {
+  2   "definitions": {},
+  3   "$schema": "http://json-schema.org/draft-07/schema#",
+  4   "$id": "http://example.com/root.json",
+  5   "type": "object",
+  6   "title": "The Root Schema",
+  7   "required": [
+  8     "coord",
+  9     "weather",
+ 10     "base",
+ 11     "main",
+ 12     "wind",
+ 13     "clouds",
+ 14     "dt",
+ 15     "sys",
+ 16     "id",
+ 17     "name",
+ 18     "cod"
+ 19   ],
+ 20   "properties": {
+ 21     "coord": {
+ 22       "$id": "#/properties/coord",
+ 23       "type": "object",
+ 24       "title": "The Coord Schema",
+ 25       "required": [
+ 26         "lon",
+ 27         "lat"
+ 28       ],
+ 29       "properties": {
+ 30         "lon": {
+ 31           "$id": "#/properties/coord/properties/lon",
+ 32           "type": "number",
+ 33           "title": "The Lon Schema",
+ 34           "default": 0.0,
+ 35           "examples": [
+ 36             73.79
+ 37           ]
+ 38         },
+ 39         "lat": {
+ 40           "$id": "#/properties/coord/properties/lat",
+ 41           "type": "number",
+ 42           "title": "The Lat Schema",
+ 43           "default": 0.0,
+ 44           "examples": [
+ 45             20.01
+ 46           ]
+ 47         }
+ 48       }
+ 49     },
+ 50     "weather": {
+ 51       "$id": "#/properties/weather",
+ 52       "type": "array",
+ 53       "title": "The Weather Schema",
+ 54       "items": {
+ 55         "$id": "#/properties/weather/items",
+ 56         "type": "object",
+ 57         "title": "The Items Schema",
+ 58         "required": [
+ 59           "id",
+ 60           "main",
+ 61           "description",
+ 62           "icon"
+ 63         ],
+ 64         "properties": {
+ 65           "id": {
+ 66             "$id": "#/properties/weather/items/properties/id",
+ 67             "type": "integer",
+ 68             "title": "The Id Schema",
+ 69             "default": 0,
+ 70             "examples": [
+ 71               800
+ 72             ]
+ 73           },
+ 74           "main": {
+ 75             "$id": "#/properties/weather/items/properties/main",
+ 76             "type": "string",
+ 77             "title": "The Main Schema",
+ 78             "default": "",
+ 79             "examples": [
+ 80               "Clear"
+ 81             ],
+ 82             "pattern": "^(.*)$"
+ 83           },
+ 84           "description": {
+ 85             "$id": "#/properties/weather/items/properties/description",
+ 86             "type": "string",
+ 87             "title": "The Description Schema",
+ 88             "default": "",
+ 89             "examples": [
+ 90               "clear sky"
+ 91             ],
+ 92             "pattern": "^(.*)$"
+ 93           },
+ 94           "icon": {
+ 95             "$id": "#/properties/weather/items/properties/icon",
+ 96             "type": "string",
+ 97             "title": "The Icon Schema",
+ 98             "default": "",
+ 99             "examples": [
+100               "01d"
+101             ],
+102             "pattern": "^(.*)$"
+103           }
+104         }
+105       }
+106     },
+107     "base": {
+108       "$id": "#/properties/base",
+109       "type": "string",
+110       "title": "The Base Schema",
+111       "default": "",
+112       "examples": [
+113         "stations"
+114       ],
+115       "pattern": "^(.*)$"
+116     },
+117     "main": {
+118       "$id": "#/properties/main",
+119       "type": "object",
+120       "title": "The Main Schema",
+121       "required": [
+122         "temp",
+123         "pressure",
+124         "humidity",
+125         "temp_min",
+126         "temp_max",
+127         "sea_level",
+128         "grnd_level"
+129       ],
+130       "properties": {
+131         "temp": {
+132           "$id": "#/properties/main/properties/temp",
+133           "type": "number",
+134           "title": "The Temp Schema",
+135           "default": 0.0,
+136           "examples": [
+137             306.027
+138           ]
+139         },
+140         "pressure": {
+141           "$id": "#/properties/main/properties/pressure",
+142           "type": "number",
+143           "title": "The Pressure Schema",
+144           "default": 0.0,
+145           "examples": [
+146             951.19
+147           ]
+148         },
+149         "humidity": {
+150           "$id": "#/properties/main/properties/humidity",
+151           "type": "integer",
+152           "title": "The Humidity Schema",
+153           "default": 0,
+154           "examples": [
+155             41
+156           ]
+157         },
+158         "temp_min": {
+159           "$id": "#/properties/main/properties/temp_min",
+160           "type": "number",
+161           "title": "The Temp_min Schema",
+162           "default": 0.0,
+163           "examples": [
+164             306.027
+165           ]
+166         },
+167         "temp_max": {
+168           "$id": "#/properties/main/properties/temp_max",
+169           "type": "number",
+170           "title": "The Temp_max Schema",
+171           "default": 0.0,
+172           "examples": [
+173             306.027
+174           ]
+175         },
+176         "sea_level": {
+177           "$id": "#/properties/main/properties/sea_level",
+178           "type": "number",
+179           "title": "The Sea_level Schema",
+180           "default": 0.0,
+181           "examples": [
+182             1022.89
+183           ]
+184         },
+185         "grnd_level": {
+186           "$id": "#/properties/main/properties/grnd_level",
+187           "type": "number",
+188           "title": "The Grnd_level Schema",
+189           "default": 0.0,
+190           "examples": [
+191             951.19
+192           ]
+193         }
+194       }
+195     },
+196     "wind": {
+197       "$id": "#/properties/wind",
+198       "type": "object",
+199       "title": "The Wind Schema",
+200       "required": [
+201         "speed",
+202         "deg"
+203       ],
+204       "properties": {
+205         "speed": {
+206           "$id": "#/properties/wind/properties/speed",
+207           "type": "number",
+208           "title": "The Speed Schema",
+209           "default": 0.0,
+210           "examples": [
+211             2.21
+212           ]
+213         },
+214         "deg": {
+215           "$id": "#/properties/wind/properties/deg",
+216           "type": "integer",
+217           "title": "The Deg Schema",
+218           "default": 0,
+219           "examples": [
+220             29
+221           ]
+222         }
+223       }
+224     },
+225     "clouds": {
+226       "$id": "#/properties/clouds",
+227       "type": "object",
+228       "title": "The Clouds Schema",
+229       "required": [
+230         "all"
+231       ],
+232       "properties": {
+233         "all": {
+234           "$id": "#/properties/clouds/properties/all",
+235           "type": "integer",
+236           "title": "The All Schema",
+237           "default": 0,
+238           "examples": [
+239             0
+240           ]
+241         }
+242       }
+243     },
+244     "dt": {
+245       "$id": "#/properties/dt",
+246       "type": "integer",
+247       "title": "The Dt Schema",
+248       "default": 0,
+249       "examples": [
+250         1539327927
+251       ]
+252     },
+253     "sys": {
+254       "$id": "#/properties/sys",
+255       "type": "object",
+256       "title": "The Sys Schema",
+257       "required": [
+258         "message",
+259         "country",
+260         "sunrise",
+261         "sunset"
+262       ],
+263       "properties": {
+264         "message": {
+265           "$id": "#/properties/sys/properties/message",
+266           "type": "number",
+267           "title": "The Message Schema",
+268           "default": 0.0,
+269           "examples": [
+270             0.1629
+271           ]
+272         },
+273         "country": {
+274           "$id": "#/properties/sys/properties/country",
+275           "type": "string",
+276           "title": "The Country Schema",
+277           "default": "",
+278           "examples": [
+279             "IN"
+280           ],
+281           "pattern": "^(.*)$"
+282         },
+283         "sunrise": {
+284           "$id": "#/properties/sys/properties/sunrise",
+285           "type": "integer",
+286           "title": "The Sunrise Schema",
+287           "default": 0,
+288           "examples": [
+289             1539305919
+290           ]
+291         },
+292         "sunset": {
+293           "$id": "#/properties/sys/properties/sunset",
+294           "type": "integer",
+295           "title": "The Sunset Schema",
+296           "default": 0,
+297           "examples": [
+298             1539348220
+299           ]
+300         }
+301       }
+302     },
+303     "id": {
+304       "$id": "#/properties/id",
+305       "type": "integer",
+306       "title": "The Id Schema",
+307       "default": 0,
+308       "examples": [
+309         1261731
+310       ]
+311     },
+312     "name": {
+313       "$id": "#/properties/name",
+314       "type": "string",
+315       "title": "The Name Schema",
+316       "default": "",
+317       "examples": [
+318         "Nashik"
+319       ],
+320       "pattern": "^(.*)$"
+321     },
+322     "cod": {
+323       "$id": "#/properties/cod",
+324       "type": "integer",
+325       "title": "The Cod Schema",
+326       "default": 0,
+327       "examples": [
+328         200
+329       ]
+330     }
+331   }
+332 }
