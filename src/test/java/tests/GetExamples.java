@@ -3,13 +3,11 @@ package tests;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.hasItem;
-import static org.junit.Assert.assertThat;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static io.restassured.RestAssured.given;
-import  static io.restassured.path.json.JsonPath.with;
+import static io.restassured.path.json.JsonPath.with;
 import java.io.File;
 import java.util.List;
-
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -78,7 +76,7 @@ public class GetExamples extends ActionsClass {
 		Assert.assertEquals(jsonPathEvaluator.get("coord.lon"), Float.parseFloat("73.85"));
 	}
 
-	@Test(description = "Using params() to fetch data and validating the response")
+	@Test(description = "Using params() to fetch data and validating the response and JSON schema")
 	public void test_07() {
 		String currentDir = System.getProperty("user.dir");
 		File fs = new File(currentDir+"\\src\\test\\resources\\json-schema.json");
